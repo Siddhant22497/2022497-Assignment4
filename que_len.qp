@@ -1,0 +1,5 @@
+set term png
+set output 'queue_length.png'
+set xlabel 'Time (in sec)'
+set ylabel 'Queue Length (packets)'
+plot 'queue_length.txt' using 1:2 with lines title 'Queue Length Over Time'
